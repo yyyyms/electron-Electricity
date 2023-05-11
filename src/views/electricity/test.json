@@ -1,0 +1,41 @@
+{
+    "data":[
+    {
+        "type":"谷电",
+        "startTime":"00:00",
+        "endTime":"07:59",
+        "price":0.407068
+    },
+    {   
+        "type":"平电",
+        "startTime":"08:00",
+        "endTime":"08:59",
+        "price":0.625668
+    },
+    {   
+        "type":"平电",
+        "startTime":"12:00",
+        "endTime":"14:59",
+        "price":0.625668
+    },
+    {   
+        "type":"平电",
+        "startTime":"20:00",
+        "endTime":"23:59",
+        "price":0.625668
+    },
+    {   
+        "type":"峰电",
+        "startTime":"09:00",
+        "endTime":"11:59",
+        "price":0.844268
+    },
+    {
+        "type":"峰电",
+        "startTime":"15:00",
+        "endTime":"19:59",
+        "price":0.844268
+    }
+]
+} 
+

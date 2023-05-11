@@ -1,0 +1,124 @@
+{
+   "data": [
+      {
+         "stage": "自定义",
+         "targetPt": 4080,
+         "time": 60,
+         "Power":0
+      },
+      {
+         "stage": "自定义",
+         "targetPt": 4310,
+         "time": 60, 
+         "Power":0
+      },
+      {
+         "stage": "自定义",
+         "targetPt": 4570,
+         "time": 60,
+         "Power":0
+      },
+      {
+         "stage": "自定义",
+         "targetPt": 4860,
+         "time": 60,
+         "Power":0
+      },
+      {
+         "stage": "自定义",
+         "targetPt": 4600,
+         "time": 60,
+         "Power":0
+      },
+      {
+         "stage": "自定义",
+         "targetPt": 4890,
+         "time": 60,
+         "Power":0
+      },
+      {
+         "stage": "自定义",
+         "targetPt": 5210,
+         "time": 60,
+         "Power":0
+      },
+      {
+         "stage": "自定义",
+         "targetPt": 5580,
+         "time": 60,
+         "Power":0
+      },
+      {
+         "stage": "自定义",
+         "targetPt": 6000,
+         "time": 60,
+         "Power":0
+      },
+      {
+         "stage": "自定义",
+         "targetPt": 7060,
+         "time": 60,
+         "Power":0
+      },
+      {
+         "stage": "自定义",
+         "targetPt": 7020,
+         "time": 60,
+         "Power":0
+      },
+      {
+         "stage": "自定义",
+         "targetPt": 9880,
+         "time": 60,
+         "Power":0
+      },
+      {
+         "stage": "自定义",
+         "targetPt": 11650,
+         "time": 60,
+         "Power":0
+      },
+      {
+         "stage": "自定义",
+         "targetPt": 15300,
+         "time": 60,
+         "Power":0
+      },
+      {
+         "stage": "自定义",
+         "targetPt": 15300,
+         "time": 60,
+         "Power":0
+      },
+      {
+         "stage": "自定义",
+         "targetPt": 15300,
+         "time": 60,
+         "Power":0
+      },
+      {
+         "stage": "自定义",
+         "targetPt": 15300,
+         "time": 60,
+         "Power":0
+      },
+      {
+         "stage": "自定义",
+         "targetPt": 15300,
+         "time": 60,
+         "Power":0
+      },
+      {
+         "stage": "自定义",
+         "targetPt": 15300,
+         "time": 60,
+         "Power":0
+      },
+      {
+         "stage": "自定义",
+         "targetPt": 15300,
+         "time": 60,
+         "Power":0
+      }
+   ]
+}
