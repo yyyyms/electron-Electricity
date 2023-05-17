@@ -4,11 +4,7 @@
       <el-form :inline="true" :model="formInline" class="demo-form-inline">
         <el-form-item label="">
           <!-- <i class="el-icon-user-solid"></i> -->
-          <el-input
-            type="password"
-            v-model="formInline.user"
-            placeholder="激活码"
-          >
+          <el-input type="password" v-model="formInline.user" placeholder="激活码">
             <i slot="prefix" class="el-input__icon el-icon-user-solid"></i>
           </el-input>
         </el-form-item>
@@ -53,28 +49,28 @@ export default {
           if (err) {
             throw err;
           }
-          this.$message("激活码写入成功",data);
+          this.$message("激活码写入成功", data);
         });
 
 
         if (str_dec.endtime !== "") {
-        let date = new Date();
-        let str = date.getTime();
-        console.log(str);
-        if (str_dec.endtime < str) {
-          this.$message("软件已到期");
-        }else {
-          this.$message("软件未到期");
-          this.$router.push('/home')
+          let date = new Date();
+          let str = date.getTime();
+          console.log(str);
+          if (str_dec.endtime < str) {
+            this.$message("软件已到期");
+          } else {
+            this.$message("软件未到期");
+            this.$router.push('/home')
+          }
+        } else {
+          this.$message("软件已过期");
+
         }
-      }else {
-        this.$message("软件已过期");
-
-      }
 
 
 
-      }else {
+      } else {
         this.$message("激活码错误");
       }
 
@@ -90,19 +86,20 @@ export default {
         let str = date.getTime();
         console.log(str);
 
-        if (str_dec.endtime<str) {
+        if (str_dec.endtime < str) {
           this.$message("软件已到期");
-        }else {
+        } else {
           this.$message("软件未到期");
           this.$router.push('/home')
         }
       }
     },
   },
-  created() {},
+  created() { },
   mounted() {
     const fs = require("fs");
     let code = machineIdSync();
+    console.log(code, 'code');
     this.MachineCode = code;
     //先判断有没有存过code
     var relogin = this.relogin;
@@ -110,13 +107,15 @@ export default {
       if (err === null) {
         // console.log(data);
         // this.relogin(data)
-        
+        // console.log('进来了');
+        console.log(data, 'data');
+
         relogin(data.toString());
       }
     });
   },
-  destroyed() {},
-  activated() {},
+  destroyed() { },
+  activated() { },
 };
 </script>
 <style scoped>
@@ -127,38 +126,47 @@ export default {
   justify-content: center;
   align-items: center;
 }
+
 .login {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
+
 .demo-form-inline {
   display: flex;
   flex-direction: column;
 }
-.container >>> .el-input__inner {
+
+.container>>>.el-input__inner {
   border-radius: 20px;
 }
-.container >>> .el-button {
+
+.container>>>.el-button {
   border-radius: 20px;
   width: 100%;
 }
-.container >>> .el-form-item {
+
+.container>>>.el-form-item {
   margin-bottom: 10px;
   width: 100%;
 }
-.container >>> .el-form-item__content {
+
+.container>>>.el-form-item__content {
   width: 100%;
 }
-.container >>> .el-button--primary {
+
+.container>>>.el-button--primary {
   background-color: #595a5c;
 }
+
 .MachineCode {
   text-align: right;
   /* padding-right: 20px; */
   font-size: small;
   cursor: pointer;
 }
+
 .code {
   margin-top: 10px;
   width: 200px;
